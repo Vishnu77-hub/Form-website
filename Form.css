@@ -1,0 +1,133 @@
+/* General body styling */
+body {
+  background: linear-gradient(135deg, rgba(0, 153, 255, 0.6), rgba(255, 102, 0, 0.6)), url('https://img.freepik.com/premium-photo/colorful-abstract-background-with-blue-yellow-geometric-pattern_481527-28428.jpg?semt=ais_hybrid') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for centering the form */
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  /* margin-top: 100px; */
+}
+
+/* Form container with shadow, rounded borders, padding, and overlay background */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  border: 1px solid #ccc;
+  /* Add a subtle tropical leaf pattern */
+  background-image: url('https://img.freepik.com/premium-photo/tropical-leaves-seamless-pattern-on-light-background-vector-illustration-for-fabric-wallpaper-invitation-posters-decoration_260164-36.jpg');
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+/* Form title styling */
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #00796b;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* Input fields styling */
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="number"], textarea, select {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 15px;
+}
+
+/* Input focus styling */
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="tel"]:focus, input[type="number"]:focus, textarea:focus, select:focus {
+  border-color: #00796b;
+  box-shadow: 0 0 8px rgba(0, 121, 107, 0.5);
+  outline: none;
+}
+
+/* Input error styling */
+input[type="text"].is-invalid, input[type="email"].is-invalid, input[type="password"].is-invalid, input[type="tel"].is-invalid, input[type="number"].is-invalid, textarea.is-invalid, select.is-invalid {
+  border-color: #e74c3c;
+}
+
+.invalid-feedback {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Button styling */
+button[type="submit"], button[type="button"] {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  color: white;
+  background-color: #00796b;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  margin-top: 15px;
+}
+
+/* Submit button hover effect */
+button[type="submit"]:hover {
+  background-color: #00695c;
+  transform: scale(1.02);
+}
+
+/* Reset button styling */
+button[type="button"] {
+  background-color: #888;
+  margin-top: 10px;
+}
+
+button[type="button"]:hover {
+  background-color: #777;
+  transform: scale(1.02);
+}
+
+/* Margin bottom for inputs */
+.mb-3 {
+  margin-bottom: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .form-container {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="number"], textarea, select {
+    padding: 12px;
+  }
+
+  button[type="submit"], button[type="button"] {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
